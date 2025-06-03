@@ -7,8 +7,11 @@ This repository contains sample code and explanations on how to extract Revelio 
 
 ## Useful Overview Sources
 [Querying data from WRDS](https://wrds-www.wharton.upenn.edu/pages/support/programming-wrds/programming-r/advanced-topics-in-r/querying-wrds-data-r/)
+
 [Information about Revelio on WRDS](https://wrds-www.wharton.upenn.edu/pages/about/data-vendors/revelio-labs/)
+
 [General Information about Revelio](https://www.data-dictionary.reveliolabs.com/data.html)
+
 [Revelio Data Dictionary](https://www.data-dictionary.reveliolabs.com/)
 
 
