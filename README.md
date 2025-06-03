@@ -18,7 +18,7 @@ This repository contains sample code and explanations on how to extract Revelio 
 # II. Connecting to WRDS and Set Up 
 The file SetConnection.R loads required libraries and establishes a connection with WRDS to allow you to extract data using SQL queries. 
 SetConnection pulls username and password data from the file LogOn/Credentials.csv.  Make sure to update this file with your username and password.
-For more information, see the [LogOn folder] (https://github.com/hbs-brds/wrds_revelio/tree/main/LogOn)
+For more information, see the [LogOn folder](https://github.com/hbs-brds/wrds_revelio/tree/main/LogOn)
 
 
 # III. Queries 
