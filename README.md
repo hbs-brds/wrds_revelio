@@ -23,7 +23,7 @@ For more information, see the [LogOn folder] (https://github.com/hbs-brds/wrds_r
 
 # III. Queries 
 The [Sample Queries](https://github.com/hbs-brds/wrds_revelio/tree/main/Sample%20Queries) folder contains sample scripts for pulling data from WRDS. They all being by calling the SetConnection.R file. 
-The file [MetaData.R](https://github.com/hbs-brds/wrds_revelio/blob/main/Sample%20Queries/MetaData.R] is a good starting point. It demonstrates how to pull names of tables in the Revelio database in WRDS and creates an Excel codebook that lists table names and provides 20 sample rows for each table in the database. 
+The file [MetaData](https://github.com/hbs-brds/wrds_revelio/blob/main/Sample%20Queries/MetaData.R] is a good starting point. It demonstrates how to pull names of tables in the Revelio database in WRDS and creates an Excel codebook that lists table names and provides 20 sample rows for each table in the database. 
 
 
 
