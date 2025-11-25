@@ -56,13 +56,25 @@ samplerows
 
 ## ---- Pull sample rows from each table ----
 for (table in tables$table_name) {
-  res <- dbSendQuery(wrds, glue("SELECT * 
-                   FROM revelio.{table}
-                   LIMIT 20"))
-  newtab <- dbFetch(res, n=-1)
-  dbClearResult(res)
+  tryCatch({
+    res <- dbSendQuery(wrds, glue("SELECT * 
+                     FROM revelio.{table}
+                     LIMIT 20"))
+    newtab <- dbFetch(res, n=-1)
+    dbClearResult(res)
   
+    
+  }, 
+  error = function(e) {
+    # If table is not found, make a blank one for codebook with error message:
+    message("Skipping ", table, " due to error: ", e$message)
+    newtab <<- data.frame(Message=c(glue("Table {table} not found. Error: {e$message}")))
+    
+  })
+  
+  #Rename newtab to table name:
   assign(table, newtab)
+
 }
 
 ## ---- Save List of Tables and sample rows to Excel Workbook ----
@@ -81,7 +93,7 @@ for (table in tables$table_name) {
 }
 
 # Save workbook
-saveWorkbook(wb, "Output/Revelio_TableList.xlsx", overwrite = TRUE)
+saveWorkbook(wb, "Revelio_TableList.xlsx", overwrite = TRUE)
 
 
 
