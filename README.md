@@ -1,5 +1,7 @@
 # Querying Data from Revelio in WRDS Using R
 
+NOTE: The Revelio tables available on WRDS have recently changed. Some of the queries on this repository have not yet been updated to reflect these changes and may not run. We are working to update the queries soon. 
+
 ## I. Overview
 ### About
 Subscribers to Revelio Labs on WRDS can extract data on user profiles, companies, and job postings to LinkedIn both through the WRDS website and programatically through R.
